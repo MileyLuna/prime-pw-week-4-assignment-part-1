@@ -61,17 +61,22 @@ console.log( 'last meal is:', getLast (array = ['breakfast','lunch','dinner','de
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  for (let i = 0; i < array.length; i++){
-    if (value === "lunch") {
+
+
+let array1 = ['22','56','00','88','77'];
+
+function find( value, array1) {
+
+  for (let i=0; i<array1.length; i++){
+    if (array1[i] == value) {
       return true;
-    } else {
-      return false;
+      break;
     }
   }
 }
 
-console.log(array.some(find));
+console.log('status:', find(56, array1));
+
 // ----------------------
 // Stretch Goals
 // ----------------------
